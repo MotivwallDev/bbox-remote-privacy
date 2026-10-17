@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Politique de confidentialité — Télécommande pour Bbox</title>
+  <style>
+    :root { --accent: #00e5ff; --bg: #0d0d1a; --surface: #161628; --text: #e2e8f0; --dim: #8892a4; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; line-height: 1.7; }
+    .lang-switcher { position: sticky; top: 0; background: var(--surface); border-bottom: 1px solid #ffffff18; display: flex; justify-content: center; gap: 12px; padding: 12px; z-index: 10; }
+    .lang-switcher a { color: var(--dim); text-decoration: none; font-size: 14px; padding: 6px 18px; border-radius: 20px; border: 1px solid #ffffff18; transition: .2s; }
+    .lang-switcher a.active, .lang-switcher a:hover { color: var(--accent); border-color: var(--accent); }
+    .lang-switcher a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+    .section { display: none; max-width: 780px; margin: 0 auto; padding: 48px 24px 80px; }
+    .section.active { display: block; }
+    h1 { font-size: 28px; font-weight: 700; color: #fff; margin-bottom: 8px; text-wrap: balance; }
+    .app-name { color: var(--accent); }
+    .updated { color: var(--dim); font-size: 13px; margin-bottom: 40px; }
+    h2 { font-size: 17px; font-weight: 600; color: #fff; margin: 32px 0 10px; border-left: 3px solid var(--accent); padding-left: 12px; }
+    h3 { font-size: 15px; font-weight: 600; color: #fff; margin: 18px 0 6px; }
+    p, li { color: var(--text); font-size: 15px; margin-bottom: 10px; }
+    ul { padding-left: 20px; }
+    a { color: var(--accent); }
+    .summary { background: #00e5ff12; border: 1px solid #00e5ff30; border-radius: 12px; padding: 16px 20px; margin: 16px 0; }
+    .summary li { margin-bottom: 6px; }
+    .summary li:last-child { margin-bottom: 0; }
+    footer { text-align: center; color: var(--dim); font-size: 12px; padding-bottom: 32px; }
+  </style>
+</head>
+<body>
+
+<div class="lang-switcher">
+  <a href="#fr" class="active" onclick="return show('fr',this)">Français</a>
+  <a href="#en" onclick="return show('en',this)">English</a>
+</div>
+
+<!-- FRENCH -->
+<div id="fr" class="section active" lang="fr">
+  <h1>Politique de confidentialité<br><span class="app-name">Télécommande pour Bbox</span></h1>
+  <p class="updated">Dernière mise à jour : 17 octobre 2026 — applications Android et iPhone</p>
+
+  <div class="summary">
+    <ul>
+      <li>Aucun compte n'est nécessaire et le développeur n'exploite aucun serveur qui recevrait vos données.</li>
+      <li>Vos box, chaînes, favoris et réglages restent sur votre téléphone.</li>
+      <li>Sur iPhone, la version gratuite affiche des publicités Google AdMob. La version Android actuelle n'affiche pas de publicité.</li>
+    </ul>
+  </div>
+
+  <h2>1. Qui sommes-nous</h2>
+  <p><strong>Télécommande pour Bbox</strong> est une télécommande pour box Bbox TV et téléviseurs Android TV / Google TV, publiée par MotivWallDev, développeur indépendant. Elle n'est pas affiliée à Bouygues Telecom.</p>
+
+  <h2>2. Données conservées uniquement sur votre téléphone</h2>
+  <ul>
+    <li>Box et téléviseurs appairés : nom et adresse IP sur votre réseau local.</li>
+    <li>Le certificat d'appairage créé par l'application, conservé dans l'espace privé de l'application (Android) ou dans le trousseau d'iOS (iPhone).</li>
+    <li>Favoris, noms de chaînes personnalisés, raccourcis, historique des textes envoyés au téléviseur et préférences (vibrations, boutons de volume, zapping).</li>
+  </ul>
+  <p>Ces données ne sont jamais envoyées au développeur. Elles sont supprimées en désinstallant l'application. Sur iPhone, le certificat d'appairage peut rester dans le trousseau d'iOS après la désinstallation ; il ne contient aucune donnée personnelle.</p>
+
+  <h2>3. Réseau local</h2>
+  <p>L'application recherche les box et téléviseurs sur votre réseau Wi-Fi, puis communique directement avec eux par une connexion chiffrée (TLS). Ces échanges restent sur votre réseau local. Sur iPhone, l'accès au réseau local est demandé à la première utilisation.</p>
+
+  <h2>4. Contrôle vocal et dictée</h2>
+  <p>Le micro n'est utilisé que lorsque vous appuyez sur le bouton micro.</p>
+  <ul>
+    <li><strong>Android</strong> : la voix est traitée par le service de reconnaissance vocale de votre téléphone (Google), selon sa propre politique de confidentialité.</li>
+    <li><strong>iPhone</strong> : la voix est traitée par la reconnaissance vocale d'Apple, qui peut l'envoyer aux serveurs d'Apple, selon la politique de confidentialité d'Apple.</li>
+  </ul>
+  <p>L'application ne reçoit que le texte reconnu. Elle n'enregistre ni ne conserve aucun son.</p>
+
+  <h2>5. Publicité — Google AdMob (iPhone)</h2>
+  <p>Sur iPhone, la version gratuite affiche des publicités fournies par Google AdMob, au plus une fois par session et uniquement après le premier appairage d'une box. L'achat Premium les supprime.</p>
+  <p>Google peut collecter l'adresse IP, des informations sur l'appareil, une localisation approximative déduite de l'adresse IP, et vos interactions avec les publicités, afin de les afficher, de les mesurer et, avec votre accord, de les personnaliser. L'identifiant publicitaire de l'iPhone (IDFA) n'est utilisé que si vous l'autorisez dans la demande de suivi d'Apple.</p>
+  <ul>
+    <li>Dans l'Espace économique européen et au Royaume-Uni, votre consentement est demandé avant toute publicité. Vous pouvez le modifier à tout moment dans <em>Paramètres → Options de confidentialité</em> de l'application.</li>
+    <li>Vous pouvez retirer l'autorisation de suivi dans <em>Réglages → Confidentialité et sécurité → Suivi</em> de l'iPhone.</li>
+  </ul>
+  <p>Politique de Google : <a href="https://policies.google.com/technologies/partner-sites">policies.google.com/technologies/partner-sites</a></p>
+  <p>La version Android actuelle n'affiche pas de publicité et ne demande aucun consentement publicitaire. Cette politique sera mise à jour avant tout changement.</p>
+
+  <h2>6. Achats — Google Play, App Store et RevenueCat</h2>
+  <p>L'achat Premium (paiement unique) est traité par Google Play ou par l'App Store : le développeur ne voit jamais vos données de paiement. Pour vérifier cet achat, l'application utilise RevenueCat, qui reçoit un identifiant anonyme créé par l'application et l'historique des achats, sans nom ni adresse e-mail.</p>
+  <p>Politique de RevenueCat : <a href="https://www.revenuecat.com/privacy">revenuecat.com/privacy</a></p>
+
+  <h2>7. Autorisations</h2>
+  <h3>Android</h3>
+  <ul>
+    <li><strong>Internet / état du réseau</strong> : communication avec la box et vérification des achats.</li>
+    <li><strong>Facturation</strong> : achat Premium via Google Play.</li>
+  </ul>
+  <h3>iPhone</h3>
+  <ul>
+    <li><strong>Réseau local</strong> : trouver et piloter votre box.</li>
+    <li><strong>Micro et reconnaissance vocale</strong> (facultatifs) : contrôle vocal et dictée.</li>
+    <li><strong>Suivi</strong> (facultatif) : publicités personnalisées.</li>
+  </ul>
+
+  <h2>8. Enfants</h2>
+  <p>L'application ne s'adresse pas aux enfants de moins de 13 ans et ne collecte pas sciemment de données les concernant.</p>
+
+  <h2>9. Vos droits</h2>
+  <p>Conformément au RGPD, vous pouvez demander l'accès, la rectification ou la suppression de vos données. Le développeur ne conservant aucune donnée vous concernant, la plupart des demandes relèvent de Google, d'Apple ou de RevenueCat ; nous vous aiderons néanmoins à les adresser.</p>
+
+  <h2>10. Modifications</h2>
+  <p>Cette politique peut être mise à jour ; la date en haut de la page indique la dernière version.</p>
+
+  <h2>11. Contact</h2>
+  <p>Pour toute question : <a href="mailto:support@motivwall.app">support@motivwall.app</a></p>
+</div>
+
+<!-- ENGLISH -->
+<div id="en" class="section" lang="en">
+  <h1>Privacy Policy<br><span class="app-name">Télécommande pour Bbox</span></h1>
+  <p class="updated">Last updated: October 17, 2026 — Android and iPhone apps</p>
+
+  <div class="summary">
+    <ul>
+      <li>No account is needed and the developer runs no server that receives your data.</li>
+      <li>Your boxes, channels, favourites and settings stay on your phone.</li>
+      <li>On iPhone, the free version shows Google AdMob ads. The current Android version shows no ads.</li>
+    </ul>
+  </div>
+
+  <h2>1. Who we are</h2>
+  <p><strong>Télécommande pour Bbox</strong> is a remote control for Bbox TV set-top boxes and Android TV / Google TV televisions, published by MotivWallDev, independent developer. It is not affiliated with Bouygues Telecom.</p>
+
+  <h2>2. Data kept on your phone only</h2>
+  <ul>
+    <li>Paired boxes and TVs: name and IP address on your local network.</li>
+    <li>The pairing certificate created by the app, kept in the app's private storage (Android) or in the iOS keychain (iPhone).</li>
+    <li>Favourites, custom channel names, shortcuts, history of text sent to the TV, and preferences (vibration, volume buttons, channel surfing).</li>
+  </ul>
+  <p>This data is never sent to the developer and is deleted when you uninstall the app. On iPhone, the pairing certificate may remain in the iOS keychain after uninstalling; it contains no personal data.</p>
+
+  <h2>3. Local network</h2>
+  <p>The app looks for boxes and TVs on your Wi-Fi network, then talks to them directly over an encrypted (TLS) connection. These exchanges stay on your local network. On iPhone, local network access is requested on first use.</p>
+
+  <h2>4. Voice control and dictation</h2>
+  <p>The microphone is only used when you tap the microphone button.</p>
+  <ul>
+    <li><strong>Android</strong>: speech is processed by your phone's speech recognition service (Google), under its own privacy policy.</li>
+    <li><strong>iPhone</strong>: speech is processed by Apple's speech recognition, which may send it to Apple's servers, under Apple's privacy policy.</li>
+  </ul>
+  <p>The app only receives the recognised text. It never records or keeps any audio.</p>
+
+  <h2>5. Advertising — Google AdMob (iPhone)</h2>
+  <p>On iPhone, the free version shows ads served by Google AdMob, at most once per session and only after a box has been paired for the first time. The Premium purchase removes them.</p>
+  <p>Google may collect the IP address, device information, an approximate location derived from the IP address, and your interactions with ads, in order to show and measure ads and, with your consent, personalise them. The iPhone advertising identifier (IDFA) is only used if you allow it in Apple's tracking prompt.</p>
+  <ul>
+    <li>In the European Economic Area and the United Kingdom, your consent is requested before any ad is shown. You can change it at any time in the app's <em>Settings → Privacy options</em>.</li>
+    <li>You can withdraw tracking permission in the iPhone's <em>Settings → Privacy &amp; Security → Tracking</em>.</li>
+  </ul>
+  <p>Google's policy: <a href="https://policies.google.com/technologies/partner-sites">policies.google.com/technologies/partner-sites</a></p>
+  <p>The current Android version shows no ads and asks for no advertising consent. This policy will be updated before any change.</p>
+
+  <h2>6. Purchases — Google Play, App Store and RevenueCat</h2>
+  <p>The Premium purchase (one-time payment) is processed by Google Play or the App Store: the developer never sees your payment details. To verify the purchase, the app uses RevenueCat, which receives an anonymous identifier created by the app and the purchase history, without any name or email address.</p>
+  <p>RevenueCat's policy: <a href="https://www.revenuecat.com/privacy">revenuecat.com/privacy</a></p>
+
+  <h2>7. Permissions</h2>
+  <h3>Android</h3>
+  <ul>
+    <li><strong>Internet / network state</strong>: talking to the box and verifying purchases.</li>
+    <li><strong>Billing</strong>: Premium purchase through Google Play.</li>
+  </ul>
+  <h3>iPhone</h3>
+  <ul>
+    <li><strong>Local network</strong>: finding and controlling your box.</li>
+    <li><strong>Microphone and speech recognition</strong> (optional): voice control and dictation.</li>
+    <li><strong>Tracking</strong> (optional): personalised ads.</li>
+  </ul>
+
+  <h2>8. Children</h2>
+  <p>The app is not directed at children under 13 and does not knowingly collect data about them.</p>
+
+  <h2>9. Your rights</h2>
+  <p>Under the GDPR you may request access to, correction of or deletion of your data. As the developer keeps no data about you, most requests concern Google, Apple or RevenueCat; we will still help you make them.</p>
+
+  <h2>10. Changes</h2>
+  <p>This policy may be updated; the date at the top of the page shows the latest version.</p>
+
+  <h2>11. Contact</h2>
+  <p>For any question: <a href="mailto:support@motivwall.app">support@motivwall.app</a></p>
+</div>
+
+<footer>
+  <p>© 2026 Télécommande pour Bbox</p>
+</footer>
+
+<script>
+function show(lang, el) {
+  document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+  document.querySelectorAll('.lang-switcher a').forEach(a => a.classList.remove('active'));
+  document.getElementById(lang).classList.add('active');
+  el.classList.add('active');
+  return false;
+}
+if (location.hash === '#en') show('en', document.querySelectorAll('.lang-switcher a')[1]);
+</script>
+</body>
+</html>
